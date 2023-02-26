@@ -160,6 +160,9 @@ struct fenwik{
 };
 
 void solve(){
+    dbg(1);
+    dbg(2);
+    dbg(3);
     fenwik tree(1e5 + 5);
 
     int n; cin >> n;
