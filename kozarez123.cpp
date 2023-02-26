@@ -185,7 +185,7 @@ int findFunctionInString(const char programCode[MAX_STR_COUNT][MAX_STR_LEN],int 
 
     return functionNamePositionInString;
 }
-My third change
+
 
 int isDataType(const char programCodeString[MAX_STR_LEN], PositionInCode positionFunctionInCode)
 {
@@ -208,7 +208,7 @@ int isDataType(const char programCodeString[MAX_STR_LEN], PositionInCode positio
    
     return isDataType;
 }
-
+My third change
 int isBracesFound(const char programCode[MAX_STR_COUNT][MAX_STR_LEN], int stringCount, PositionInCode positionFunctionInCode)
 {
     PositionInCode positionOfClosingParentheses = { -1, -1 }; // Считать, что закрывающие скобки не найдены
