@@ -126,7 +126,7 @@ PositionInCode findFunctionAndItTypeOfEntry(const char programCode[MAX_STR_COUNT
     
     return positionInCode;
 }
-My third change
+
 PositionInCode findFirstOccurrenceOfFunction(const char programCode[MAX_STR_COUNT][MAX_STR_LEN], int stringCount, const char functionName[])
 {   
     PositionInCode positionInCode = { -1,  -1 }; //Считать, что функция не найдена
@@ -185,7 +185,7 @@ int findFunctionInString(const char programCode[MAX_STR_COUNT][MAX_STR_LEN],int 
 
     return functionNamePositionInString;
 }
-
+My third change
 
 int isDataType(const char programCodeString[MAX_STR_LEN], PositionInCode positionFunctionInCode)
 {
