@@ -192,6 +192,9 @@ void solve(){
             tree.modify(vct[i], ans[i]);
         }
     }
+    int a = 1;
+    int b = 2;
+    int c = a + b;
 
     dbg(tree.func_elem(1e9));
     return;
