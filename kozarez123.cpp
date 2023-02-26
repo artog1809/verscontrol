@@ -48,7 +48,7 @@ void outputFunctionCreator(int isFound, FunctionCreator functinCreator)
 
     puts(answerString);
 }
-
+My second change
 int inputProgramCode(int *stringCount, char functionName[], char programCode[MAX_STR_COUNT][MAX_STR_LEN])
 {   
     int inputError = 0;
