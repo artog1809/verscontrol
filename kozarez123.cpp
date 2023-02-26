@@ -97,7 +97,7 @@ int determineFunctionCreator(const char programCode[MAX_STR_COUNT][MAX_STR_LEN],
 
     return functionIsFound;
 }
-My third change                                                                                                                                                                         
+                                                                                                                                                                        
 
 PositionInCode findFunctionAndItTypeOfEntry(const char programCode[MAX_STR_COUNT][MAX_STR_LEN], int stringCount, const char functionName[], TypeOfEntryFunction* typeOfEntryFunction) {
     
@@ -126,7 +126,7 @@ PositionInCode findFunctionAndItTypeOfEntry(const char programCode[MAX_STR_COUNT
     
     return positionInCode;
 }
-
+My third change
 PositionInCode findFirstOccurrenceOfFunction(const char programCode[MAX_STR_COUNT][MAX_STR_LEN], int stringCount, const char functionName[])
 {   
     PositionInCode positionInCode = { -1,  -1 }; //Считать, что функция не найдена
