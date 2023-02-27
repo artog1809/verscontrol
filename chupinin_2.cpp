@@ -4,7 +4,7 @@
 #define X first
 #define Y second
 #define vi vector<ll>
-#define int ll
+#define int long long
 
 using namespace std;
 
@@ -111,7 +111,7 @@ void solve(){
             ans -= (cnt[i] * (cnt[i] - 1)) / 2;
     }
 
-    cout << ans << "\n";
+    cout << ans << endl;
 }
 
 

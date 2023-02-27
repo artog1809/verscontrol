@@ -34,11 +34,11 @@ int main()
 
     if (lucky) {
 
-        printf("Number is lucky");
+        printf("Number is lucky"); // print 222
     }
     else  {
 
-        printf("Number is not lucky");
+        printf("Number is not lucky"); // print text 222
     }
     WAIT_ANY_KEY
 }
