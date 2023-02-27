@@ -128,3 +128,11 @@ int numberOfTranspositionWithFixedPoints(int amountNumbers, int amountFixedPoint
     //на число перестановок, не содержащих неподвижные точки
     return choiceOfFixedPoints(amountNumbers, amountFixedPoints) * numberOfTranspositionWithoutFixedPoints(amountNumbers - amountFixedPoints);
 }
+
+int colSochitaniya(int n, int m) {
+    int res = 0;
+    for (int i = n, i >= 1; i++) {
+        res = i*(i-1)
+    }
+    return res;
+}
