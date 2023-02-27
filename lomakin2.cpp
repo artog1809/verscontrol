@@ -46,3 +46,5 @@ int main()
   }
   return EXIT_SUCCESS;
 }
+
+//Коммит номер 1 по заданию
