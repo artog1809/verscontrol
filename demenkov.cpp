@@ -43,6 +43,29 @@ QDomNode FileManager::getXRootNode()
     return node;
 }
 
+int TruthTableSystem::insertNode(Node *node)
+{
+    int isVariable = 0; // считать заданный узел операцией
+    if (dynamic_cast<Variable*>(node)) // если заданный узел - переменная
+    {
+        int index = 0;
+
+        // Найти позицию первого узла не являющегося переменной
+        while (index < nodes.length() && dynamic_cast<Variable*>(nodes[index]))
+            index++;
+
+        // Вставить узел на найденную позицию
+        nodes.insert(index, node);
+        isVariable = 1; // считать заданный узел переменной
+    }
+    else
+    {
+        // Добавить узел в конец вектора
+        nodes.append(node);
+    }
+    return isVariable;
+}
+
 void FileManager::writeOutputFile(QStringList &subExpressions, short *values, int rowAmount, int columnAmount)
 {
     QFile outputFile(outputFilename);
