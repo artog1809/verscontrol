@@ -6,17 +6,14 @@
 #include <stdio.h>
 #include "..\09_Gailevich_Y_V\Header.h"
 
-
 #define MAX_STRING_AMOUNT 60
 #define MAX_STRING_LENGTH 90
 #define MAX_OPERATOR_LENGTH 10
-
 
 int findFirstStringWithGivenOperator(char code[MAX_STRING_AMOUNT][MAX_STRING_LENGTH], char oper[MAX_OPERATOR_LENGTH], int StringAmount)
 {
 	int i=0; // Счетчик для цикла
 
-	int OperLength = strlen(oper);
 
 	bool isLeftLetter, isRightLetter;
 
@@ -28,8 +25,6 @@ int findFirstStringWithGivenOperator(char code[MAX_STRING_AMOUNT][MAX_STRING_LEN
 		{
 			
 			Devider = strstr(code[i], oper);
-
-			isLeftLetter = Devider - code[i] > 0 && isalnum(*(Devider - 1));
 
 			isRightLetter = isalnum(*(Devider + OperLength));
 
@@ -43,7 +38,6 @@ int findFirstStringWithGivenOperator(char code[MAX_STRING_AMOUNT][MAX_STRING_LEN
 	}
 	return -1;
 }
-
 
 int main()
 {
@@ -69,8 +63,6 @@ int main()
 	char* SeparatedOperator;
 
 	SeparatedOperator = strtok(GivenOperator, OperatorDevider);
-
-	strcpy(GivenOperatorCut, SeparatedOperator);
 
 	//-----Вызов главной вычислительной функции---------
 	OutputStringIndex = findFirstStringWithGivenOperator(InputText, GivenOperatorCut, M);
