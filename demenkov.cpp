@@ -72,18 +72,6 @@ void FileManager::writeOutputFile(QStringList &subExpressions, short *values, in
     outputFile.open(QIODevice::WriteOnly);
     QTextStream outputStream(&outputFile);
 
-    // Добавить строковые представления узлов в заголовки колонок
-    QString header = "";
-    for (int i = 0; i < columnAmount; i++)
-    {
-        header.append(subExpressions[i]);
-
-        if (i < columnAmount - 1)
-            header.append(";");
-        else
-            header.append("\n");
-    }
-
     // Преобразовать строки матрицы значений в строки выходного файла
     char* vals = (char*)malloc(2*rowAmount*columnAmount*sizeof(char)+1);
 
