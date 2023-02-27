@@ -7,10 +7,7 @@ int main(int argc, char* argv[])
 	output_file.open(QIODevice::WriteOnly | QIODevice::Text);
 	QTextStream out(&output_file);
 
-	if (argc != 4) {
-		out << "Too many arguments." << endl;
-		return -1;
-	}
+int NewVar = 0;
 
 	Node* tree = new Node;
 	tree->set_type(operation);
