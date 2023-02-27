@@ -284,4 +284,4 @@ void deleteAllSeparatorsFromString(char str[], const char* seps)
 			i++; //Перейти к следующему элементу
 		}
 	}
-}
+}// НЕТ ВРЕМЕНИ
