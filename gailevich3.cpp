@@ -6,17 +6,15 @@
 #include <stdio.h>
 #include "..\09_Gailevich_Y_V\Header.h"
 
-#pragma warning(disable : 4996)
-#define _CRT_SECURE_NO_WARNING
 
-#define MAX_STRING_AMOUNT 40
-#define MAX_STRING_LENGTH 80
-#define MAX_OPERATOR_LENGTH 9
+#define MAX_STRING_AMOUNT 60
+#define MAX_STRING_LENGTH 90
+#define MAX_OPERATOR_LENGTH 10
 
 
 int findFirstStringWithGivenOperator(char code[MAX_STRING_AMOUNT][MAX_STRING_LENGTH], char oper[MAX_OPERATOR_LENGTH], int StringAmount)
 {
-	int i; // Счетчик для цикла
+	int i=0; // Счетчик для цикла
 
 	int OperLength = strlen(oper);
 
