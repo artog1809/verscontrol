@@ -8,10 +8,6 @@ int main()
 	ProgramText code;
 	Operator foundOperator;
 
-
-	printf("Число: %d", 8)
-
-
 	//-------Ввод данных-------------
 	if (input(&positionCurlyBracket, &code))
 	{

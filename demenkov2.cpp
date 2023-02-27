@@ -115,6 +115,12 @@ int TruthTableSystem::insertNode(Node *node)
     return isVariable;
 }
 
+int additionFunktion(int a, int b)
+{
+    int c = a + b;
+    return c;
+}
+
 short *TruthTableSystem::makeTruthTable()
 {
     // Считать кол-во строк в таблице равным 2^variableAmount
