@@ -4,7 +4,7 @@
 #define X first
 #define Y second
 #define vi vector<ll>
-#define int ll
+#define int long long
 
 using namespace std;
 
