@@ -9,6 +9,7 @@ int main()
     int n;
     bool lucky;
     int d1, d2, d3, d4, d5, d6;
+    int n1, n2, n3;
 
     input_printf("Input number:");
     scanf_s("%d", &n);
