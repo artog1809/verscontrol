@@ -215,3 +215,11 @@ string convertFormulaToTex(const string& reversePolishEntry)
 	return texFormula;
 }
 
+
+string convertEngToRus(const string& Russian)
+{
+	Russian = "aaaa";
+	return Russian;
+}
+
+
