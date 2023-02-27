@@ -319,3 +319,5 @@ int isKeyword(const char word[])
 void newFunction() {
     // Прототип новой функции.
 }
+
+// Для нововго коммита.
