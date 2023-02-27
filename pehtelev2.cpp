@@ -264,7 +264,7 @@ void output(const successWork_findControlOperator* result, const Operator* found
 		printf_s("no operator");
 	}
 }
-
+//Мда
 void removeAllSeparatorsFromString(char str[], const char* seps)
 {
 	int i = 0; //Считать индекс текущего элемента равным нулю
