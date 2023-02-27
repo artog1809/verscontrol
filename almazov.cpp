@@ -257,3 +257,7 @@ void writeToFile(string& fileName, string& texFormula) {
     fout.open(fileName); // открыть/создать файл
     fout << texFormula; // записать данные в файл
 }
+
+void function(string& fileName) {
+    fout << fileName;
+}
