@@ -160,6 +160,9 @@ struct fenwik{
 };
 
 void solve(){
+    dbg(1);
+    dbg(2);
+    dbg(3);
     fenwik tree(1e5 + 5);
 
     int n; cin >> n;
@@ -189,6 +192,9 @@ void solve(){
             tree.modify(vct[i], ans[i]);
         }
     }
+    int a = 1;
+    int b = 2;
+    int c = a + b;
 
     dbg(tree.func_elem(1e9));
     return;
