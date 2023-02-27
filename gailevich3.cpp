@@ -49,12 +49,6 @@ int main()
 {
 	int M, OutputStringIndex;
 
-	char InputText[MAX_STRING_AMOUNT][MAX_STRING_LENGTH];
-
-	char GivenOperator[MAX_OPERATOR_LENGTH];
-
-	char GivenOperatorCut[MAX_OPERATOR_LENGTH];
-
 	//-------Ввод данных-------------
 	scanf_s("%d", M);
 
@@ -98,9 +92,6 @@ int main()
 	//Пока не пройдены все элементы строки
 
 	//Если текущий элемент является разделителем
-	
-		//Сдвинуть все элементы начиная с текущего влево
-		//Считать последний символ в строке концом строки
 	
 	//Иначе
 	
