@@ -13,7 +13,7 @@ unsigned long long int arrangementWithRepeats(int m, int n);
 int main() {
 	setlocale(LC_ALL, "Russian");
 
-	int operNumber = 0;
+	int operNumber = -1;
 	int firstNum = 0;
 	int secondNum = 0;
 	unsigned long long int res = 0;
@@ -52,20 +52,7 @@ int main() {
 	return 0;
 }
 
-unsigned long long int fact(int num)
-{
-	unsigned long long int res = 1;
-	for(int i=2;i<=num;i++)
-		res *= i;
-	return res;
-}
-unsigned long long int power(int base, unsigned int power)
-{
-	unsigned long long int res = 1;
-	for (unsigned int i = 1; i <= power; i++)
-		{res *= base;}
-	return res;
-}
+
 
 //Сочетания из n по m: C(m n) = n! / ( m! * (n-m)! )
 unsigned long long int combinations(int m, int n)
@@ -84,15 +71,4 @@ unsigned long long int combinationsWithRepeats(int m, int n)
 {
 	if (m == 0 || m == n) return 1;
 return combinations(m, n + m - 1);
-}
-
-//Размещения с повторениями из n по m: ~A(m n) = n^m
-unsigned long long int arrangementWithRepeats(int m, int n)
-{
-	if (n < 0 || m < 0)
-	{
-		printf("Неправильный ввод данных: ограничения для размещений с повторениями\n~A(m n) : n>=0; m>=0;");
-		return 0;
-	}
-	return power(n, m);
 }
