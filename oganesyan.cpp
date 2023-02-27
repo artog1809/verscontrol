@@ -47,5 +47,7 @@ int main()
   return EXIT_SUCCESS;
 }
 
-//Коммит номер 1 по заданию
-//Добавочный коммит. Задание 3.
+bool aas(int x, int y){
+	return false;
+}
+
