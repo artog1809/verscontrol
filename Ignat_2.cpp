@@ -1,18 +1,6 @@
 #include "constantInFunction.h"
 
-constantInFunction::constantInFunction()
-{
-	this->name = "defaultConstantName"; //Задать имя функции
-	this->countInFunction = 0; //Установить счётчик встреч константы за функцию равным 1
-}
 
-
-
-
-std::string constantInFunction::getName() //Получить имя константы
-{
-	return this->name; //Вернуть имя константы
-}
 
 
 /*
