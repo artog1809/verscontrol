@@ -11,13 +11,12 @@ unsigned long long int arrangementWithRepeats(int m, int n);
 
 
 int main() {
-	setlocale(LC_ALL, "Russian");
 
-	int operNumber = -1;
+	int operNumber = 0;
 	int firstNum = 0;
 	int secondNum = 0;
 	unsigned long long int res = 0;
-	printf("Выберите тип операции:\n 1- Сочетания без повторений  C(m n)\n 2- Сочетания с повторениями ~C(m n)\n 3- Размещения с повторениями ~A(m n)\n");
+	printf("1- Сочетания без повторений  C(m n)\n 2- Сочетания с повторениями ~C(m n)\n 3- Размещения с повторениями ~A(m n)\n");
 	scanf("%d", &operNumber);
 	switch (operNumber) 
 	{
@@ -52,9 +51,6 @@ int main() {
 	return 0;
 }
 
-
-
-//Сочетания из n по m: C(m n) = n! / ( m! * (n-m)! )
 unsigned long long int combinations(int m, int n)
 {
 	if (m == 0 || m == n) return 1;
@@ -66,7 +62,6 @@ unsigned long long int combinations(int m, int n)
 		combinations(m, n - 1);
 }
 
-//Сочетания с повторениями из n по m: ~C(m n) = C (m, n+m -1)
 unsigned long long int combinationsWithRepeats(int m, int n)
 {
 	if (m == 0 || m == n) return 1;
