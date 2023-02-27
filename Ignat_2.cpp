@@ -7,19 +7,6 @@ constantInFunction::constantInFunction()
 }
 
 
-constantInFunction::constantInFunction(std::string _name, int _stringNum)
-{
-	this->name = _name; //Задать имя функции
-	this->appearingStrings[0] = _stringNum; //Добавить первую встречу константы в заданной строке
-	this->countInFunction = 1; //Установить счётчик встреч константы за функцию равным 1
-}
-
-
-constantInFunction::~constantInFunction()
-{
-}
-
-//---------- ВЗАИМОДЕЙСТВИЕ С КОНСТАНТОЙ ----------
 
 
 std::string constantInFunction::getName() //Получить имя константы
