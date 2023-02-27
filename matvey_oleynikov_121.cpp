@@ -177,6 +177,9 @@ void solve(){
         dbg(b, s);
         mp[b].push_back(s);
     }
+    cout << "GITGITGITGIT";
+    cout << "GITGITGITGIT2";
+    cout << "GITGITGITGIT3";
 
     dbg(n);
     for (auto& elem: mp){
