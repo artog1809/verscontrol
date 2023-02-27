@@ -34,11 +34,19 @@ int main()
 
     if (lucky) {
 
+<<<<<<< HEAD:Pavlova4.cpp
         printf("Number is lucky"); // text
     }
     else  {
 
         printf("Number is not lucky"); // text22
+=======
+        printf("Number is lucky"); // print 222
+    }
+    else  {
+
+        printf("Number is not lucky"); // print text 222
+>>>>>>> 3997a206249cd0b9f9d2805957cd502489296d9e:Pavlova2.cpp
     }
     WAIT_ANY_KEY
 }

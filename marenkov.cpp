@@ -6,7 +6,10 @@
 #include "Header.h"
 int main(int argc, char *argv[])
 {
-
+    i = 0;
+    while (i != 10) {
+        i++;
+    }
     printf("%d", 11)
 
 
