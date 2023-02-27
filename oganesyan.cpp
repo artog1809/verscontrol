@@ -46,3 +46,8 @@ int main()
   }
   return EXIT_SUCCESS;
 }
+
+bool aas(int x, int y){
+	return false;
+}
+
