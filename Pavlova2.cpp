@@ -1,5 +1,4 @@
 // Lab1.1_Pavlova.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
 
 #include <iostream>
 #include "testing.h"
@@ -16,7 +15,6 @@ int main()
 
     d6 = n / 100000;
     n = n - d6 * 100000;
-
     d5 = n / 10000;
     n = n - d5 * 10000;
 
@@ -34,12 +32,11 @@ int main()
     lucky = (d1 == d4) && (d2 == d5) && (d3 == d6);
 
     if (lucky) {
-
-        printf("Number is lucky");
+        printf("Number is lucky"); // print
     }
-    else { 
+    else  {
 
-        printf("Number is not lucky");
+        printf("Number is not lucky"); // print text
     }
     WAIT_ANY_KEY
 }
