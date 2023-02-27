@@ -1,7 +1,7 @@
 #include "convertTreeToTEX.h"
 #include <boost/algorithm/string.hpp>
 
-
+// Добавил изменнения 
 
 ExpressionTree* convertReversePolishEntryToTree(vector<string>& reversePolishEntryElements)
 {
@@ -30,7 +30,7 @@ ExpressionTree* convertReversePolishEntryToTree(vector<string>& reversePolishEnt
 		throw INCORRECT_DIAPOSON_EXCEPTION; // ��������� ����������
 	}
 
-
+// В ветку а не мастер
 	if (current->getExpressionElementType() == OPERATOR && reversePolishEntryElements.size() >= current->getOperandsCount()) { // ����� ������� �������� ���������� � ���������� ��������� � ������� ����������, ����� ��������� �� ���������� ��� ������ ��������
 
 		vector<ExpressionTree*> operands(current->getOperandsCount()); // ���������� ���������� ��������� ���������
