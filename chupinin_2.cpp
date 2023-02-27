@@ -111,7 +111,7 @@ void solve(){
             ans -= (cnt[i] * (cnt[i] - 1)) / 2;
     }
 
-    cout << ans << "\n";
+    cout << ans << endl;
 }
 
 
